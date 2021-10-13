@@ -1,9 +1,9 @@
 
 /**
  * 
- * @param {array} array 
- * @param {integer} divider 
- * @returns array
+ * @param {Array} array 
+ * @param {number} divider 
+ * @returns {Array[]}
  */
 function  arraySplitter(array, divider) {
     const newArray = []
