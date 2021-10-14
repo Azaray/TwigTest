@@ -1,9 +1,9 @@
 import { arraySplitter } from "./utils/arraySplitter.js";
 
-const array = [4, 5, 7, 3, 2];
-const divider = 0;
-console.log("Array used is " + array);
-console.log("Divider used is " + divider);
+const array = [1, 2, 3, 4, 5, 6, 7,8,9,10,11,12];
+const divider = 8;
+console.log("Initial array = " + array);
+console.log("Array will be split into " + divider + " groups");
 
 try {
     console.log(arraySplitter(array, divider));
