@@ -5,15 +5,15 @@
  * @param {number} divider 
  * @returns {Array[]}
  */
-function  arraySplitter(array, divider) {
+const arraySplitter = (array, divider) => {
     if (divider === 0 || !Number.isInteger(divider)) {
-        throw 'Divider is not an integer!'
+        throw Error('Divider is not an integer!');
     } 
+    if (divider > array.length) {
+        throw new Error('Divider must be >= array size!');
+    }
     if (divider === 1 || array.length === 0) {
         return [array];
-    }
-    if (divider > array.length) {
-        throw 'Divider must be >= array size!'
     }
     const newArray = [];
 
@@ -53,6 +53,6 @@ function  arraySplitter(array, divider) {
         return newArray;
     }
 
-}
+};
 
-export {arraySplitter};
+exports.arraySplitter = arraySplitter;
